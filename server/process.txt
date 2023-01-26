@@ -1,0 +1,11 @@
+npm init -y
+npm i express
+npm i esm
+npm i nodemon -d
+npm i dotenv
+create server.js
+create express server
+CREATE .ENV
+create config folder
+import app port 
+edit package.json start and dev scripts
