@@ -51,7 +51,7 @@ const Map = ({ country }) => {
     console.log("flyto");
   };
   const getApi = async () => {
-    const response = await Axios.get("http://localhost:5000/getPoppup");
+    const response = await Axios.get("/getPoppup");
     console.log(
       response.data.main.pressure,
       " ",

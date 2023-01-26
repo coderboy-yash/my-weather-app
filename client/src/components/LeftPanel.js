@@ -40,9 +40,7 @@ const LeftPanel = ({
   const name = "yash";
   const class1 = "imt";
   const getLon = async () => {
-    const response = await Axios.get(
-      `http://localhost:5000/getData/?name=${name}&class1=${class1}`
-    );
+    const response = await Axios.get(`/getData/?name=${name}&class1=${class1}`);
     console.log(response);
     setLon(response.data.lon);
   };

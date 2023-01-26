@@ -52,7 +52,7 @@ const Map = ({ country, latitude, longitude, zoom, first, last }) => {
   };
   const getApi = async () => {
     const response = await Axios.get(
-      `http://localhost:5000/getWeather/?latitude=${latitude}&longitude=${longitude}`
+      `/getWeather/?latitude=${latitude}&longitude=${longitude}`
     );
     console.log(
       response.data.main.pressure,

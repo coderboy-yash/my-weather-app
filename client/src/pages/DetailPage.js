@@ -20,13 +20,13 @@ const DetailPage = () => {
   const getData = async () => {
     // console.log("hello");
     const response = await Axios.get(
-      `http://localhost:5000/getWeather/?latitude=${latitude}&longitude=${longitude}`
+      `/getWeather/?latitude=${latitude}&longitude=${longitude}`
     );
     // console.log(response.data);
     setWeather(response.data);
     console.log(weather);
     const response1 = await Axios.get(
-      `http://localhost:5000/getForeCast/?latitude=${latitude}&longitude=${longitude}`
+      `/getForeCast/?latitude=${latitude}&longitude=${longitude}`
     );
 
     console.log(response1);
